@@ -688,6 +688,11 @@ section{
         }
     }
 }
+
+.btn-about-con{
+    display: flex;
+    justify-content: flex-start;
+}
 .main-btn {
     border-radius: 100px;
     color: inherit;
