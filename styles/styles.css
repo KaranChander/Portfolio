@@ -174,10 +174,10 @@ section {
 }
 .header-content .left-header {
   display: flex;
-  align-items: center;
+  align-items: left;
   position: relative;
   top: 20%;
-  scale: 110%;
+  scale: 100%;
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
@@ -186,7 +186,7 @@ section {
   background-color: var(--color-secondary);
   position: absolute;
   left: 9%;
-  top: 5%;
+  top: 0%;
   -webkit-clip-path: circle(70% at 10% 20%);
           clip-path: circle(70% at 10% 20%);
 }
@@ -210,7 +210,7 @@ section {
   filter: grayscale(0);
 }
 .header-content .right-header {
-  padding-top: 40px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -336,6 +336,46 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
   width: 60%;
 }
+.about-stats .container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-stats .container .box {
+  width: 30%;
+  background-color: none;
+  padding: 50px;
+  text-align: center;
+  border: 3px solid rgb(115, 115, 115);
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out;
+}
+.about-stats .container .box svg {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto;
+  display: inline-flex;
+  fill: var(--color-white);
+}
+.about-stats .container .box h2 {
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.about-stats .container .box p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: lighter;
+  text-align: start;
+  display: flex;
+}
+.about-stats .container .box:hover {
+  border-color: var(--color-secondary);
+  cursor: default;
+  transform: translateY(-5px);
+}
+.about-stats .container .box:hover h2 {
+  color: var(--color-secondary);
+}
 
 .stat-title {
   text-transform: uppercase;
@@ -381,6 +421,25 @@ section {
 .timeline .timeline-item .tl-icon i {
   font-size: 1.3rem;
 }
+.timeline .timeline-item .tags {
+  display: block;
+  justify-content: left;
+  text-align: left;
+  color: white;
+  padding: 1rem 0;
+}
+.timeline .timeline-item .broker-tag {
+  background: var(--color-grey0);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 5px 10px;
+  margin: 3px 0;
+  border-radius: 10px;
+  display: inline-block;
+  opacity: 0.8;
+  color: black;
+}
 .timeline .timeline-item .tl-duration {
   padding: 0.2rem 0.6rem;
   background-color: var(--color-grey-5);
@@ -407,7 +466,7 @@ section {
 
 .port-text {
   padding: 2rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .portfolios {
@@ -477,13 +536,13 @@ section {
 }
 
 .portfolio-item:hover .hover-items {
-  opacity: 0.8;
+  opacity: 1;
   transform: scale(1);
 }
 
 .contact-content-con {
   display: flex;
-  padding-top: 3.5rem;
+  padding-top: 2.5rem;
 }
 .contact-content-con .left-contact {
   flex: 1;
@@ -545,7 +604,7 @@ section {
   font-size: 1.3rem;
 }
 .contact-content-con .right-contact {
-  flex: 2;
+  flex: 1;
   margin-left: 3rem;
 }
 .contact-content-con .right-contact .input-control {
@@ -579,6 +638,33 @@ section {
 .btn-con {
   display: flex;
   align-self: flex-start;
+  display: flex;
+  margin-top: 2rem;
+}
+.btn-con a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  transition: all 0.4s ease-in-out;
+}
+.btn-con a:hover {
+  background-color: var(--color-secondary);
+}
+.btn-con a:hover i {
+  color: var(--color-primary);
+}
+.btn-con a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 
 .main-btn {

@@ -176,10 +176,10 @@ section{
     grid-template-columns: repeat(2, 1fr);
     .left-header{
         display: flex;
-        align-items: center;
+        align-items: left;
         position: relative;
         top: 20%;
-        scale: 110%;
+        scale: 100%;
         .h-shape{
             transition: all .4s ease-in-out;
             width: 70%;
@@ -187,7 +187,7 @@ section{
             background-color: var(--color-secondary);
             position: absolute;
             left: 9%;
-            top: 5%;
+            top: 0%;
             clip-path: circle(70% at 10% 20%);
         }
         .image{
@@ -210,7 +210,7 @@ section{
         }
     }
     .right-header{
-        padding-top: 40px;
+        padding-top: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -337,6 +337,52 @@ section{
 
         }
     }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+      
+        .box {
+          width: 30%;
+          background-color: none;
+          padding: 50px;
+          text-align: center;
+          border: 3px solid (rgb(115, 115, 115));
+          border-radius: 20px;
+          transition: all .4s ease-in-out;
+          svg {
+            width: 34px;
+            height: 34px;
+            margin: 0 auto;
+            // margin-top: 40px;
+            display: inline-flex;
+            fill: var(--color-white);
+          }
+      
+          h2 {
+            font-weight: bolder;
+            margin-top: 05px;
+          }
+      
+          p {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: lighter;
+            text-align:start;
+            display: flex;
+          }
+          
+          &:hover{
+           h2{
+            color: var(--color-secondary);
+           }
+           border-color: var(--color-secondary);
+           cursor: default;
+           transform: translateY(-5px);
+        }
+        }
+      }
 }
 
 .stat-title{
@@ -356,6 +402,7 @@ section{
         transform: translateX(-50%);
     }
 }
+
 
 //TImeline
 .timeline{
@@ -382,6 +429,26 @@ section{
                 font-size: 1.3rem;
             }
         }
+        .tags {
+            display: block;
+            justify-content: left;
+            text-align: left;
+            color: white;
+            padding: 1rem 0;
+            }
+
+            .broker-tag {
+            background: var(--color-grey0);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 5px 10px;
+            margin: 3px 0;
+            border-radius: 10px;
+            display: inline-block;
+            opacity: 0.8;
+            color: black;
+            }
             .tl-duration{
                 padding: .2rem .6rem;
                 background-color: var(--color-grey-5);
@@ -412,7 +479,7 @@ section{
 // PORTFOLIOS
 .port-text{
     padding: 2rem 0;
-    text-align: center;
+    text-align: left;
 }
 
 .portfolios{
@@ -482,7 +549,7 @@ section{
 }
 
 .portfolio-item:hover .hover-items { 
-        opacity: 0.8;
+        opacity: 1;
         transform: scale(1);    
 }
 
@@ -491,7 +558,7 @@ section{
 //CONTACT SECTION
 .contact-content-con{
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
     .left-contact{
         flex: 1;
         h4{
@@ -557,7 +624,7 @@ section{
     }
 
     .right-contact{
-        flex: 2;
+        flex: 1;
         margin-left: 3rem;
         .input-control{
             margin: 1.5rem 0;
@@ -593,6 +660,33 @@ section{
 .btn-con{
     display: flex;
     align-self: flex-start;
+    display: flex;
+    margin-top: 2rem;
+    a{
+        display: flex;
+        align-items: center;
+        color: var(--color-white);
+        background-color: var(--color-grey-5);
+        cursor: pointer;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 .4rem;
+        transition: all .4s ease-in-out;
+        &:hover{
+            background-color: var(--color-secondary);
+            i{
+                color: var(--color-primary);
+            }
+        }
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+    }
 }
 .main-btn {
     border-radius: 100px;
